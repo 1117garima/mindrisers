@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+</head>
+<body>
+  
+  <fieldset>
+    <legend>Personal Info</legend>
+    <form action="mailto:garima4016@gmail.com?subject=hello" method="post" enctype="text/plain">
+      <p>
+        <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="your name">
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="your email">
+      </p>
+      <p>
+      <label for="">Password:</label>
+      <input type="password" name="password" required>
+      </p>
+      <p>
+        <label for="">Date Of Birth:</label>
+        <input type="date" id="date" name="date">
+      </p>
+      
+      <p>
+        <h3>Select Your Gender</h3>
+        <label for="male">Male</label>
+        <input type="radio" id="male" value="male" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="female" value="female" name="gender">
+        <label for="others">Others</label>
+        <input type="radio" id="others" value="others" name="gender">
+      </p>
+
+      <p>
+        <h3>Select Your Hobbies</h3>
+        <label for="sing">Singing</label>
+        <input type="checkbox" id="sing" value="sing" name="hobbies">
+        <label for="dance">Dancing</label>
+        <input type="checkbox" id="dance" value="dance" name="hobbies">
+        <label for="cook">Cooking</label>
+        <input type="checkbox" id="cook" value="cook" name="hobbies">
+      </p>
+
+      <p>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="type message"></textarea>
+      </p>
+      <p>
+        <h3>Select Your Country</h3>
+         <select name="country" id="">
+          <optgroup label="Asia">
+            <option value="">Nepal</option>
+            <option value="">India</option>
+            <option value="">China</option>
+          </optgroup>
+         </select>
+
+         <select name="coffee" id="">
+          <optgroup label="Hard Coffee">
+            <option value="">Espresso</option>
+          </optgroup>
+          <optgroup label="Light Coffee">
+            <option value="">Cappuccino</option>
+          </optgroup>
+         </select>
+      </p>
+
+      <input type="color">
+      <input type="range">
+      <input type="time">
+    
+        <button type="submit">Submit</button>
+        <button type="reset"> Reset</button>
+    </form>
+  </fieldset>
+</body>
+</html>
